@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+    
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin: 10px auto;}
+    .attribution a { color: hsl(228, 45%, 44%);}
+  </style>
+</head>
+<body>
+    <section class="container">
+    	<main class="header">
+	    <div class="header-main-box">
+	    	<div class="header-info-box">
+	    	    <div class="header-image-box">
+	    	    	<img src="./images/image-jeremy.png" class="header-image">
+	    	    </div>
+		    <div>
+	    	    	<p class="header-title">Report for</p>
+  	    	    	<h2 class="header-name">Jeremy Robson</h2>
+		    </div>
+            	</div>
+	    	<ul class="header-time-box">
+	    	    <li>
+			<button id="daily-button" class="header-time">Daily</button>
+		    </li>
+  	    	    <li>
+			<button id="weekly-button" class="header-time">Weekly</button>
+		    </li>
+  	    	    <li>
+			<button id="monthly-button" class="header-time">Monthly</button>
+		    </li>
+	    	</ul>
+	    </div>
+    	</main>
+    	<ul class="card-grid">
+	    <li class="work-container card-container">
+	    	<img src="./images/icon-work.svg" class="card-image">
+	    	<div class="card-box">
+	    	    <div class="card-title-box">
+		    	<p>Work</p>
+		    	<img src="./images/icon-ellipsis.svg" class="more">
+	    	    </div>
+	    	    <div class="card-time-box">
+  		    	<h2 id="card-time"></h2>
+  		    	<p id="card-previous-time"></p>
+	    	    </div>
+	    	</div>
+	    </li>
+
+	   <li class="play-container card-container">
+	    	<img src="./images/icon-play.svg" class="card-image">
+	    	<div class="card-box">
+	    	    <div class="card-title-box">
+		    	<p>Play</p>
+		    	<img src="./images/icon-ellipsis.svg" class="more">
+	    	    </div>
+	    	    <div class="card-time-box">
+  		    	<h2 id="card-time"></h2>
+  		    	<p id="card-previous-time"></p>
+	    	    </div>
+	    	</div>
+	    </li>
+
+	   <li class="study-container card-container">
+	    	<img src="./images/icon-study.svg" class="card-image">
+	    	<div class="card-box">
+	    	    <div class="card-title-box">
+		    	<p>Study</p>
+		    	<img src="./images/icon-ellipsis.svg" class="more">
+	    	    </div>
+	    	    <div class="card-time-box">
+  		    	<h2 id="card-time"></h2>
+  		    	<p id="card-previous-time"></p>
+	    	    </div>
+	    	</div>
+	    </li>
+
+	   <li class="exercise-container card-container">
+	    	<img src="./images/icon-exercise.svg" class="card-image">
+	    	<div class="card-box">
+	    	    <div class="card-title-box">
+		    	<p>Exercise</p>
+		    	<img src="./images/icon-ellipsis.svg" class="more">
+	    	    </div>
+	    	    <div class="card-time-box">
+  		    	<h2 id="card-time"></h2>
+  		    	<p id="card-previous-time"></p>
+	    	    </div>
+	    	</div>
+	    </li>
+	   <li class="social-container card-container">
+	    	<img src="./images/icon-social.svg" class="card-image">
+	    	<div class="card-box">
+	    	    <div class="card-title-box">
+		    	<p>Social</p>
+		    	<img src="./images/icon-ellipsis.svg" class="more">
+	    	    </div>
+	    	    <div class="card-time-box">
+  		    	<h2 id="card-time"></h2>
+  		    	<p id="card-previous-time"></p>
+	    	    </div>
+	    	</div>
+	    </li>
+	   <li class="selfcare-container card-container">
+	    	<img src="./images/icon-self-care.svg" class="card-image">
+	    	<div class="card-box">
+	    	    <div class="card-title-box">
+		    	<p>Self Care</p>
+		    	<img src="./images/icon-ellipsis.svg" class="more">
+	    	    </div>
+	    	    <div class="card-time-box">
+  		    	<h2 id="card-time"></h2>
+  		    	<p id="card-previous-time"></p>
+	    	    </div>
+	    	</div>
+	    </li>
+    	</ul>
+    </section>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Paradise Ilyas</a>.
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

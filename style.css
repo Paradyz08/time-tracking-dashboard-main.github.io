@@ -1,0 +1,324 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300,400,500,600,700,800,900&display=swap");*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400; /* Example weight; adjust as needed */
+    font-style: normal;
+}
+
+.container {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 2fr;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-main-box {
+    width: fit-content;
+    height: fit-content;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px; 
+}
+
+.header-info-box {
+    background-color: hsl(246, 80%, 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-image-box {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;	
+}
+
+.header-image {
+    width: 70px;
+}
+
+.header-title{
+    color: hsl(236, 100%, 87%);
+    font-size: 18px;
+}
+
+.header-name {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.header-time-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.header-time-box > li {
+    list-style: none;
+}
+
+.header-time {
+    font-size: 18px;
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    outline: none;
+}
+
+.header-time:focus,
+.header-time:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(255, 255, 255);
+}
+
+.card-grid {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-image {
+   position: absolute;
+   z-index: -1;
+   top: 0%;
+   right: 5%;
+}
+
+.card-box {
+    width: 100%;
+    height: 150px;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.card-box:active,
+.card-box:hover {
+    background-color: hsl(235, 45%, 61%);
+} 
+
+.card-title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-title-box > p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.card-time-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+.card-time-box > h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.card-time-box > p {
+    color: hsl(236, 100%, 87%);
+    font-size: 18px;
+}
+
+.more:active,
+.more:hover {
+    color: rgb(255, 255, 255);
+}
+
+.work-container {
+    background-color: hsl(15, 100%, 70%);
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: flex-end;
+    z-index: -1;
+    list-style: none;
+}
+
+.play-container {
+    background-color: hsl(195, 74%, 62%);
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: flex-end;
+    z-index: -1;
+    list-style: none;
+}
+
+.study-container {
+    background-color: hsl(348, 100%, 68%);
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: flex-end;
+    z-index: -1;
+    list-style: none;
+}
+
+.exercise-container {
+    background-color: hsl(145, 58%, 55%);
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: flex-end;
+    z-index: -1;
+    list-style: none;
+}
+
+.social-container {
+    background-color: hsl(264, 64%, 52%);
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: flex-end;
+    z-index: -1;
+    list-style: none;
+}
+
+.selfcare-container {
+    background-color: hsl(43, 84%, 65%);
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: flex-end;
+    z-index: -1;
+    list-style: none;
+}
+
+@media screen and (max-width: 400px) {
+
+    .container {
+	display: flex;
+     	flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+	gap: 20px;
+    }    
+
+    .header-main-box {
+	display: flex;
+	flex-direction: column;
+     	align-items: center;
+	justify-content: center;
+        width: 100%;
+	height: 150px;
+    }
+
+    .header-info-box {
+     	display: flex;        
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .header-image-box {
+	margin: 0;
+	width: 50px;
+    }
+
+    .header-image {
+	width: 50px;
+    }
+
+    .header-time-box {
+	display: flex;
+        flex-direction: row; 
+        justify-content: space-evenly;
+	width: 100%;
+    }
+
+    .card-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    }
+	
+    .card-container {
+	width: 100%;
+    }
+
+    .card-time-box {
+	display: flex;
+	flex-direction: row;
+        align-items: center;
+	justify-content: space-between;
+    }
+
+}
